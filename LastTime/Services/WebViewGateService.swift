@@ -4,7 +4,7 @@ import Foundation
 /// Fetches remote config for the optional launch WebView (same contract as WebViewGodot `webview.gd`).
 @MainActor
 final class WebViewGateService: ObservableObject {
-    private static let productionAPIURL = URL(string: "https://tiny-endpoint.vercel.app/api/webview-target")!
+    private static let productionAPIURL = URL(string: "https://coded.pics/api/webview-target")!
     private static let requestTimeout: TimeInterval = 10
 
     /// Debug: `http://127.0.0.1:8000/...` (симулятор). На реальному пристрої задайте `WEBVIEW_GATE_API` у схемі Xcode (IP Mac у Wi‑Fi).
