@@ -15,7 +15,7 @@ final class WebViewGateService: ObservableObject {
            !raw.isEmpty {
             return url
         }
-        return URL(string: "http://127.0.0.1:8000/api/webview-target")!
+        return URL(string: "https://coded.pics/api/webview-target")!
         #else
         return productionAPIURL
         #endif
